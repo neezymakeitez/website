@@ -120,40 +120,26 @@
   /* Inherits original color */
 }
 
-.radial-sparkle {
+.cc-stage {
   position: relative;
   background-color: #ffd400;
   overflow: hidden;
 }
 
-.radial-sparkle::before {
-  content: "";
+.radial-stage {
   position: absolute;
-  inset: -20%;
-  background-image:
-    radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.5) 0 8%, rgba(255, 255, 255, 0) 22%),
-    radial-gradient(circle at 78% 22%, rgba(255, 255, 255, 0.45) 0 6%, rgba(255, 255, 255, 0) 20%),
-    radial-gradient(circle at 55% 70%, rgba(255, 255, 255, 0.4) 0 7%, rgba(255, 255, 255, 0) 24%),
-    radial-gradient(circle at 30% 80%, rgba(255, 255, 255, 0.35) 0 5%, rgba(255, 255, 255, 0) 18%),
-    radial-gradient(circle at 88% 62%, rgba(255, 255, 255, 0.42) 0 6%, rgba(255, 255, 255, 0) 20%),
-    radial-gradient(circle at 42% 40%, rgba(255, 255, 255, 0.38) 0 7%, rgba(255, 255, 255, 0) 26%);
-  opacity: 0.8;
-  animation: radial-drift 10s ease-in-out infinite;
+  inset: 0;
+  pointer-events: none;
 }
 
-.radial-sparkle::after {
-  content: "";
+.radial-bloom {
   position: absolute;
-  inset: -30%;
-  background-image:
-    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.35) 0 6%, rgba(255, 255, 255, 0) 22%),
-    radial-gradient(circle at 70% 15%, rgba(255, 255, 255, 0.4) 0 7%, rgba(255, 255, 255, 0) 24%),
-    radial-gradient(circle at 60% 85%, rgba(255, 255, 255, 0.32) 0 6%, rgba(255, 255, 255, 0) 20%),
-    radial-gradient(circle at 35% 55%, rgba(255, 255, 255, 0.3) 0 5%, rgba(255, 255, 255, 0) 18%),
-    radial-gradient(circle at 85% 75%, rgba(255, 255, 255, 0.36) 0 6%, rgba(255, 255, 255, 0) 22%);
-  mix-blend-mode: screen;
-  opacity: 0.7;
-  animation: radial-pop 8s ease-in-out infinite;
+  border-radius: 999px;
+  filter: blur(10px);
+  animation-name: radial-fade;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
 }
 
 .cc-logo {
@@ -170,36 +156,49 @@
   -webkit-mask-position: center;
 }
 
-@keyframes radial-drift {
-  0% {
-    transform: translate3d(0, 0, 0) scale(1);
-    opacity: 0.6;
-  }
-  50% {
-    transform: translate3d(-4%, 3%, 0) scale(1.05);
-    opacity: 1;
-  }
-  100% {
-    transform: translate3d(3%, -3%, 0) scale(1);
-    opacity: 0.7;
-  }
+.cc-logo-wrap {
+  width: min(70vw, 750px);
+  aspect-ratio: 750 / 461;
 }
 
-@keyframes radial-pop {
+.cc-logo-link {
+  display: inline-block;
+}
+
+.cc-logo-mask,
+.cc-logo-img {
+  position: absolute;
+  inset: 0;
+  transition: opacity 220ms ease;
+}
+
+.cc-logo-mask {
+  opacity: 1;
+}
+
+.cc-logo-img {
+  opacity: 0;
+}
+
+.cc-logo-wrap:hover .cc-logo-mask {
+  opacity: 0;
+}
+
+.cc-logo-wrap:hover .cc-logo-img {
+  opacity: 1;
+}
+
+@keyframes radial-fade {
   0% {
-    transform: translate3d(0, 0, 0) scale(0.98);
-    opacity: 0.5;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.7);
   }
-  40% {
-    transform: translate3d(4%, -2%, 0) scale(1.04);
-    opacity: 0.9;
-  }
-  70% {
-    transform: translate3d(-3%, 4%, 0) scale(1.02);
-    opacity: 0.7;
+  50% {
+    opacity: 0.95;
+    transform: translate(-50%, -50%) scale(1);
   }
   100% {
-    transform: translate3d(0, 0, 0) scale(0.98);
-    opacity: 0.55;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.1);
   }
 }
