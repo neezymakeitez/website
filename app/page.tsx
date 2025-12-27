@@ -14,6 +14,9 @@ export default function Home() {
                     <Link href="/content" className="hover:text-[#03FFFF] transition-colors">
                         content
                     </Link>
+                    <Link href="/cc" className="hover:text-[#03FFFF] transition-colors">
+                        cc
+                    </Link>
                     <a
                         href="https://x.com/nihalvsnihal"
                         target="_blank"
