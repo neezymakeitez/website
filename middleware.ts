@@ -19,12 +19,12 @@ export function middleware(request: NextRequest) {
         return NextResponse.next();
     }
 
-    if (pathname === "/cc") {
+    if (pathname === "/_cc") {
         return NextResponse.next();
     }
 
     const url = request.nextUrl.clone();
-    url.pathname = "/cc";
+    url.pathname = "/_cc";
     url.search = "";
     return NextResponse.rewrite(url);
 }

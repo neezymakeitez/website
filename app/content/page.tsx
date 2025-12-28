@@ -58,6 +58,12 @@ const items: Item[] = [
     about: "goated director",
     highlight: false,
   },
+  {
+    href: "https://www.youtube.com/watch?v=heIog9Rv7Qw&list=RDheIog9Rv7Qw&start_radio=1",
+    title: "Seasons in the Sun (2min49s)",
+    about: "haunting cover, raw voice, bittersweet melody, unforgettable ending, live energy",
+    highlight: false,
+  },
   // red
   {
     href: "https://www.dailymotion.com/video/x2hjvbg",
