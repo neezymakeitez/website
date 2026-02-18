@@ -158,7 +158,7 @@ export default function Home() {
           <a href="mailto:nihal@berkeley.edu" className="text-[#03FFFF]">
             nihal@berkeley.edu
           </a>
-          . i (usually) reply.
+          . i usually reply.
         </p>
       </div>
     </main>
