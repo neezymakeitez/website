@@ -72,7 +72,7 @@ export default function Home() {
           >
             Builders at Cal
           </a>
-          — a Berkeley organization for ambitious founders
+          — an organization for ambitious founders
         </p>
 
         <p className="font-extrabold">stuff i&apos;ve built / shipped:</p>
