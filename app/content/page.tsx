@@ -146,6 +146,14 @@ export default function ContentPage() {
           >
             linkedin
           </a>
+          <a
+            href="https://discord.com/users/nihalsshadow"
+            target="_blank"
+            rel="noopener"
+            className="hover:text-[#03FFFF] transition-colors"
+          >
+            discord
+          </a>
         </div>
       </nav>
 
