@@ -13,7 +13,7 @@ const items: Item[] = [
     href: "https://www.youtube.com/watch?v=MnrJzXM7a6o",
     title: "Jobs introduces iphone (10min19s)",
     about: "the most iconic moment in tech history",
-    highlight: true,
+    highlight: false,
   },
   {
     href: "https://youtube.com/playlist?list=PLyQSN7X0ro23NUN9RYBP5xdBYoiv2_5y2&si=na6ff8Az9jwr1gvz",
@@ -25,7 +25,7 @@ const items: Item[] = [
   {
     href: "https://www.youtube.com/watch?v=ycPr5-27vSI",
     title: "Elon (JRE 1169) (2hr37min)",
-    about: "elon musk is a genius",
+    about: "elon musk is a <special> person",
     highlight: false,
   },
   {
@@ -44,13 +44,13 @@ const items: Item[] = [
     href: "https://youtube.com/playlist?list=PLXBcsPKqNstCyT1lKP9DwiNYbbMyiOLel&si=ZiWFpoWQkX94Cxu9",
     title: "GTO (24episodes)",
     about: "one of my fav animes, highly underrated",
-    highlight: true,
+    highlight: false,
   },
   {
     href: "https://www.youtube.com/watch?v=8XqNq_oeSMM&list=RD8XqNq_oeSMM",
     title: "Kendrick Control (3min6s)",
-    about: "At a time of complacency, Kenny turned up the heat",
-    highlight: true,
+    about: "At a time of complacency, Kendrick turned up the heat",
+    highlight: false,
   },
   {
     href: "https://www.netflix.com/title/81617079",
@@ -58,26 +58,27 @@ const items: Item[] = [
     about: "goated director",
     highlight: false,
   },
-  {
-    href: "https://www.youtube.com/watch?v=heIog9Rv7Qw&list=RDheIog9Rv7Qw&start_radio=1",
-    title: "Seasons in the Sun (2min49s)",
-    about: "haunting cover, raw voice, bittersweet melody, unforgettable ending, live energy",
-    highlight: false,
-  },
+  // {
+  //   href: "https://www.youtube.com/watch?v=heIog9Rv7Qw&list=RDheIog9Rv7Qw&start_radio=1",
+  //   title: "Seasons in the Sun (2min49s)",
+  //   about:
+  //     "haunting cover, raw voice, bittersweet melody, unforgettable ending, live energy",
+  //   highlight: false,
+  // },
   // red
   {
     href: "https://www.dailymotion.com/video/x2hjvbg",
     title: "Nirvana Reading '92 (1hr32min)",
     about:
       "the world thought he was dead, but he instead showed up and delivered one of the greatest performances of all time",
-    highlight: true,
+    highlight: false,
   },
   // red
   {
     href: "https://www.youtube.com/watch?v=AX4MKIDvXLM",
     title: "The Fountainhead: Roark Courtroom Speech (6m)",
     about:
-      "Ayn Rand's masterpiece, a monologue on integrity and creation, rejecting applause and collective compromise",
+      "Rand's masterpiece, a monologue on integrity and creation, rejecting applause and collective compromise",
     highlight: true,
   },
   // red
@@ -86,7 +87,7 @@ const items: Item[] = [
     title: "Whiplash: Caravan (9m39s)",
     about:
       "Drum duel crescendos, control wrestled back, teacher and student collide",
-    highlight: true,
+    highlight: false,
   },
   // red
   {
@@ -102,7 +103,7 @@ const items: Item[] = [
     title: "Naval Ravikant (JRE 1309) (2h11m)",
     about:
       "Leverage, judgment, specific knowledge, compounding happiness; timeless mental models discussed",
-    highlight: true,
+    highlight: false,
   },
   {
     href: "https://www.youtube.com/watch?v=3wMKoSRbGVs",
@@ -130,12 +131,20 @@ export default function ContentPage() {
             content
           </Link>
           <a
-            href="https://x.com/nihalvsnihal"
+            href="https://x.com/boinanihal_"
             target="_blank"
             rel="noopener"
             className="hover:text-[#03FFFF] transition-colors"
           >
             x
+          </a>
+          <a
+            href="https://www.linkedin.com/in/nihalboina/"
+            target="_blank"
+            rel="noopener"
+            className="hover:text-[#03FFFF] transition-colors"
+          >
+            linkedin
           </a>
         </div>
       </nav>
@@ -150,7 +159,6 @@ export default function ContentPage() {
       {/* Intro Section */}
       <div className="text-[20px] leading-[1.5em] text-[#888888] tracking-[-0.7px] space-y-4 mb-8">
         <p>inspired by farza, here&apos;s my list of content that I like.</p>
-        <p>i look up to the greats, and i&apos;ve studied them religiously.</p>
         <p>
           The pieces of content in <span className="text-red-400">red</span> are
           ones that deeply affected me, and pieces I return to.

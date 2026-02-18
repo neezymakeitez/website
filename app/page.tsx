@@ -25,6 +25,14 @@ export default function Home() {
           >
             x
           </a>
+          <a
+            href="https://www.linkedin.com/in/nihalboina/"
+            target="_blank"
+            rel="noopener"
+            className="hover:text-[#03FFFF] transition-colors"
+          >
+            linkedin
+          </a>
         </div>
       </nav>
 
@@ -39,24 +47,24 @@ export default function Home() {
       <div className="text-[30px] leading-[1.6em] text-[#888888] tracking-[-0.4px] space-y-5">
         <p className="font-extrabold">i&apos;m:</p>
         <div className="font-extrabold !mt-10 ml-8">
-          failing in public
+          building in public
           <br />
-          building & shipping fast
+          breaking & shipping fast
           <br />
           optimizing for utility, vibes, & retention
         </div>
 
         <p className="font-extrabold !mt-20">
-          right now i&apos;m all-in on{" "}
+          right now i&apos;m working on{" "}
           <a
-            // href="https://systemhealthai.com"
+            href="https://www.instagram.com/buildersatcal/"
             target="_blank"
             rel="noopener"
-            className="text-[#03FFFF] no-underline"
+            className="text-[#FDB515] no-underline"
           >
-            SYSTEM
+            Builders at Cal
           </a>
-          — a health companion that changes your life
+          — a Berkeley organization for ambitious founders
         </p>
 
         <p className="font-extrabold">stuff i&apos;ve built / shipped:</p>
@@ -93,7 +101,7 @@ export default function Home() {
             >
               Discourse (&apos;24)
             </a>{" "}
-            — real-time debates with AI for the 1st amendment
+            — real-time debates with AI moderation and coaching
           </li>
           <li>
             <a
@@ -104,45 +112,45 @@ export default function Home() {
             >
               Prism Clips (&apos;25)
             </a>{" "}
-            — ai editor that finds the viral moments in long-form video and
-            auto-generates clips/titles.
+            — ai agent that finds the right moments in long-form videos and
+            auto-generates viral clips.
           </li>
           <li>
             <a
-              // href="https://systemhealthai.com"
+              href="https://systemhealthai.com"
               target="_blank"
               rel="noopener"
-              className="text-[#03FFFF] no-underline"
+              className="text-[#03FFFF]"
             >
               SYSTEM (&apos;26)
             </a>{" "}
-            — current focus. full AI accountability for your health, that goes
-            away & steps in, when it needs to.
+            — full AI accountability for your health, that goes away & steps in,
+            when it needs to.
           </li>
         </ul>
 
         <p className="font-extrabold">
-          some wins, lots of Ls, constant iteration. i like building simple
-          things that feel inevitable once you use them.
+          some wins, lots of iteration. i like building simple things that help
+          people and feel inevitable once you use them.
         </p>
 
         <p className="text-[#777777] font-extrabold">
-          i also tinker with ml systems (rag + memory, mission engines, video
-          understanding). wrote papers, shipped infra, and i&apos;m still
-          happiest when the loop is: idea → prototype → users → refactor → ship
-          again.
+          i also tinker with ml systems (RAG & llm memory, multi-agent
+          workflows, video & world models). wrote numerous medical papers,
+          shipped infra, and i&apos;m still happiest when the loop is:
         </p>
+        <p>idea → prototype → users → refactor → ship again</p>
       </div>
 
       {/* Footer */}
       <div className="mt-10 text-[18px] leading-[1.6em] text-[#777777]">
         <p>
-          p.s. if you want to build something together or have a crisp ask
-          (&lt;300 chars), email{" "}
+          p.s. if you want to build something or have a crisp ask (&lt;300
+          chars), email{" "}
           <a href="mailto:nihal@berkeley.edu" className="text-[#03FFFF]">
             nihal@berkeley.edu
           </a>
-          . i usually reply.
+          . i (usually) reply.
         </p>
       </div>
     </main>
