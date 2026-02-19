@@ -18,7 +18,7 @@ export default function Home() {
             content
           </Link>
           <a
-            href="https://x.com/boinanihal_"
+            href="https://x.com/nihalbo_"
             target="_blank"
             rel="noopener"
             className="hover:text-[#03FFFF] transition-colors"
@@ -40,6 +40,14 @@ export default function Home() {
             className="hover:text-[#03FFFF] transition-colors"
           >
             github
+          </a>
+          <a
+            href="https://cal.com/nihalbo"
+            target="_blank"
+            rel="noopener"
+            className="hover:text-[#03FFFF] transition-colors"
+          >
+            meeting
           </a>
         </div>
       </nav>
