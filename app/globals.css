@@ -71,6 +71,13 @@
   }
 }
 
+/* Light mode overrides for gray utility colors */
+.text-\[\#555555\],
+.text-\[\#777777\],
+.text-\[\#888888\] {
+  color: #111111 !important;
+}
+
 /* Custom dark theme */
 .dark {
   background-color: #0a0a0a;
@@ -107,6 +114,14 @@
 
 .dark .text-\[\#888888\] {
   color: #999999 !important;
+}
+
+.hover-blue:hover {
+  color: #3b82f6 !important;
+}
+
+.dark a.hover-blue:hover {
+  color: #3b82f6 !important;
 }
 
 .dark .text-\[\#111111\] {

@@ -95,7 +95,15 @@ export default function Home() {
             >
               FoodGrind (&apos;23)
             </a>{" "}
-            — CalDining ratings app with 1k daily users (Flutter, AWS)
+            — CalDining ratings app with 1k daily users founded with{" "}
+            <a
+              href="https://www.linkedin.com/in/ranashreyas"
+              target="_blank"
+              rel="noopener"
+              className="text-[#888888] underline hover:text-blue-500 transition-colors"
+            >
+              Shreyas Rana
+            </a>
           </li>
           <li>
             <a
@@ -106,7 +114,7 @@ export default function Home() {
             >
               Beternal (&apos;24)
             </a>{" "}
-            — betting (DFS & book) algorithms, scrapers, & analytics
+            — betting (DFS & book) algorithms, scrapers, & analytics (solo)
           </li>
           <li>
             <a
@@ -117,7 +125,8 @@ export default function Home() {
             >
               Discourse (&apos;24)
             </a>{" "}
-            — real-time debates with AI moderation and coaching
+            — real-time debates with AI moderation and coaching founded with
+            Daniel Joseph
           </li>
           <li>
             <a
@@ -129,7 +138,15 @@ export default function Home() {
               Prism Clips (&apos;25)
             </a>{" "}
             — ai agent that finds the right moments in long-form videos and
-            auto-generates viral clips. (Next.js, AWS)
+            auto-generates viral clips founded w/{" "}
+            <a
+              href="https://www.linkedin.com/in/nolan-rossi/"
+              target="_blank"
+              rel="noopener"
+              className="text-[#888888] underline hover:text-blue-500 transition-colors"
+            >
+              Nolan Rossi
+            </a>
           </li>
           <li>
             <a
@@ -141,7 +158,7 @@ export default function Home() {
               SYSTEM (&apos;26)
             </a>{" "}
             — full AI accountability for your health, that goes away & steps in,
-            (SwiftUI, Kotlin, AWS, GCP, Azure) when it needs to.
+            (SwiftUI, Kotlin, AWS, GCP, Azure) when it needs to
           </li>
         </ul>
 
@@ -155,7 +172,7 @@ export default function Home() {
           workflows, video & world models). wrote numerous medical papers,
           shipped infra, and i&apos;m still happiest when the loop is:
         </p>
-        <p>idea → prototype → users → refactor → ship again</p>
+        <p>idea → prototype → users → refactor → ship, repeat </p>
       </div>
 
       {/* Footer */}
