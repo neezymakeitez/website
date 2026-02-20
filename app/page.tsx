@@ -1,10 +1,12 @@
 import Link from "next/link";
 import ThemeToggle from "./components/ThemeToggle";
+import TypewriterOnScroll from "./components/TypewriterOnScroll";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-white px-6 md:px-12 lg:px-24 py-12 max-w-[900px]">
       <ThemeToggle />
+      <TypewriterOnScroll />
       {/* Navigation */}
       <nav className="mb-12">
         <div className="flex gap-6 text-lg text-[#888888]">
@@ -15,7 +17,7 @@ export default function Home() {
             href="/content"
             className="hover:text-[#03FFFF] transition-colors"
           >
-            content
+            content i like
           </Link>
           <a
             href="https://x.com/nihalbo_"
@@ -54,15 +56,23 @@ export default function Home() {
 
       {/* Hero */}
       <div className="mb-6">
-        <h1 className="text-[40px] md:text-[48px] font-bold text-[#111111] leading-tight tracking-[-2.1px]">
+        <h1
+          className="text-[40px] md:text-[48px] font-bold text-[#111111] leading-tight tracking-[-2.1px] fade-section"
+          data-typewriter
+        >
           hi i&apos;m nihal.
         </h1>
       </div>
 
       {/* Bio */}
       <div className="text-[30px] leading-[1.6em] text-[#888888] tracking-[-0.4px] space-y-5">
-        <p className="font-extrabold">i&apos;m:</p>
-        <div className="font-extrabold !mt-10 ml-8">
+        <p className="font-extrabold fade-section" data-typewriter>
+          i&apos;m:
+        </p>
+        <div
+          className="font-extrabold !mt-10 ml-8 fade-section keep-gray text-[#888888]"
+          data-typewriter
+        >
           building in public
           <br />
           breaking & shipping fast
@@ -70,7 +80,7 @@ export default function Home() {
           optimizing for utility, vibes, & retention
         </div>
 
-        <p className="font-extrabold !mt-20">
+        <p className="font-extrabold !mt-20 fade-section" data-typewriter>
           right now i&apos;m working on{" "}
           <a
             href="https://www.instagram.com/buildersatcal/"
@@ -78,17 +88,19 @@ export default function Home() {
             rel="noopener"
             className="text-[#FDB515] no-underline"
           >
-            Builders at Cal
+            Builders at Cal (B@C)
           </a>
           — an organization for ambitious founders
         </p>
 
-        <p className="font-extrabold">stuff i&apos;ve built / shipped:</p>
+        <p className="font-extrabold fade-section" data-typewriter>
+          stuff i&apos;ve built / shipped:
+        </p>
 
         <ul className="list-disc pl-6 space-y-3">
-          <li>
+          <li className="fade-section" data-typewriter>
             <a
-              href="https://apps.apple.com/us/app/foodgrind/id1664938134"
+              href="https://www.instagram.com/foodgrindcal/"
               target="_blank"
               rel="noopener"
               className="text-[#F7D41C]"
@@ -100,12 +112,12 @@ export default function Home() {
               href="https://www.linkedin.com/in/ranashreyas"
               target="_blank"
               rel="noopener"
-              className="text-[#888888] underline hover:text-blue-500 transition-colors"
+              className="text-[#888888] underline hover-blue transition-colors"
             >
               Shreyas Rana
             </a>
           </li>
-          <li>
+          <li className="fade-section" data-typewriter>
             <a
               href="https://beternal.app"
               target="_blank"
@@ -116,9 +128,9 @@ export default function Home() {
             </a>{" "}
             — betting (DFS & book) algorithms, scrapers, & analytics (solo)
           </li>
-          <li>
+          <li className="fade-section" data-typewriter>
             <a
-              href="https://discourseapp.com"
+              href="https://www.instagram.com/discourseapp_/"
               target="_blank"
               rel="noopener"
               className="bg-gradient-to-r from-[#FF0000] to-[#45A9F5] inline-block text-transparent bg-clip-text no-underline relative after:content-[''] after:absolute after:left-0 after:bottom-[3px] after:h-[2px] after:w-full after:bg-gradient-to-r after:from-[#FF0000] after:to-[#45A9F5]"
@@ -128,7 +140,7 @@ export default function Home() {
             — real-time debates with AI moderation and coaching founded with
             Daniel Joseph
           </li>
-          <li>
+          <li className="fade-section" data-typewriter>
             <a
               href="https://prismclips.com"
               target="_blank"
@@ -143,12 +155,12 @@ export default function Home() {
               href="https://www.linkedin.com/in/nolan-rossi/"
               target="_blank"
               rel="noopener"
-              className="text-[#888888] underline hover:text-blue-500 transition-colors"
+              className="text-[#888888] underline hover-blue transition-colors"
             >
               Nolan Rossi
             </a>
           </li>
-          <li>
+          <li className="fade-section" data-typewriter>
             <a
               href="https://systemhealthai.com"
               target="_blank"
@@ -162,22 +174,28 @@ export default function Home() {
           </li>
         </ul>
 
-        <p className="font-extrabold">
+        <p className="font-extrabold fade-section" data-typewriter>
           some wins, lots of iteration. i like building simple things that help
           people and feel inevitable once you use them.
         </p>
 
-        <p className="text-[#777777] font-extrabold">
+        <p
+          className="text-[#777777] font-extrabold fade-section"
+          data-typewriter
+        >
           i also tinker with ml systems (RAG & llm memory, multi-agent
-          workflows, video & world models). wrote numerous medical papers,
-          shipped infra, and i&apos;m still happiest when the loop is:
+          workflows, video & world models). wrote numerous medical machine
+          learning papers, shipped infra, taught machine & deep learning, and
+          still happiest when the loop is:
         </p>
-        <p>idea → prototype → users → refactor → ship, repeat </p>
+        <p className="fade-section" data-typewriter>
+          idea → prototype → users → refactor → ship & repeat
+        </p>
       </div>
 
       {/* Footer */}
       <div className="mt-10 text-[18px] leading-[1.6em] text-[#777777]">
-        <p>
+        <p className="fade-section" data-typewriter>
           p.s. if you want to build something or have a crisp ask (&lt;300
           chars), email{" "}
           <a href="mailto:nihal@berkeley.edu" className="text-[#03FFFF]">

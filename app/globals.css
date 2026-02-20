@@ -78,6 +78,10 @@
   color: #111111 !important;
 }
 
+.keep-gray.text-\[\#888888\] {
+  color: #888888 !important;
+}
+
 /* Custom dark theme */
 .dark {
   background-color: #0a0a0a;
@@ -122,6 +126,25 @@
 
 .dark a.hover-blue:hover {
   color: #3b82f6 !important;
+}
+
+.fade-section {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 600ms ease, transform 600ms ease;
+}
+
+.fade-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-section {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
 
 .dark .text-\[\#111111\] {
