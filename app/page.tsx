@@ -95,7 +95,7 @@ export default function Home() {
             >
               FoodGrind (&apos;23)
             </a>{" "}
-            — CalDining ratings app with 1k daily users
+            — CalDining ratings app with 1k daily users (Flutter, AWs)
           </li>
           <li>
             <a
@@ -129,7 +129,7 @@ export default function Home() {
               Prism Clips (&apos;25)
             </a>{" "}
             — ai agent that finds the right moments in long-form videos and
-            auto-generates viral clips.
+            auto-generates viral clips. (Next.js, AWS)
           </li>
           <li>
             <a
@@ -141,7 +141,7 @@ export default function Home() {
               SYSTEM (&apos;26)
             </a>{" "}
             — full AI accountability for your health, that goes away & steps in,
-            when it needs to.
+            (SwiftUI, Kotlin, AWS, GCP, Azure) when it needs to.
           </li>
         </ul>
 
