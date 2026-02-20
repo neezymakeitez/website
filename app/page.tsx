@@ -44,6 +44,14 @@ export default function Home() {
             github
           </a>
           <a
+            href="https://substack.com/@nihalbo"
+            target="_blank"
+            rel="noopener"
+            className="hover:text-[#03FFFF] transition-colors"
+          >
+            substack
+          </a>
+          <a
             href="https://cal.com/nihalbo"
             target="_blank"
             rel="noopener"
@@ -88,7 +96,7 @@ export default function Home() {
             rel="noopener"
             className="text-[#FDB515] no-underline"
           >
-            Builders at Cal (B@C)
+            B@C — Builders @ Cal
           </a>
           — an organization for ambitious founders
         </p>
