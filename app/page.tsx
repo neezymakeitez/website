@@ -47,7 +47,7 @@ export default function Home() {
             rel="noopener"
             className="hover:text-[#03FFFF] transition-colors"
           >
-            meeting
+            Cal
           </a>
         </div>
       </nav>

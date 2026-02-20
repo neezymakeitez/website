@@ -160,7 +160,7 @@ export default function ContentPage() {
             rel="noopener"
             className="hover:text-[#03FFFF] transition-colors"
           >
-            github
+            Cal
           </a>
         </div>
       </nav>
