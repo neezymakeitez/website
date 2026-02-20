@@ -95,7 +95,7 @@ export default function Home() {
             >
               FoodGrind (&apos;23)
             </a>{" "}
-            — CalDining ratings app with 1k daily users (Flutter, AWs)
+            — CalDining ratings app with 1k daily users (Flutter, AWS)
           </li>
           <li>
             <a
