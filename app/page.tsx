@@ -94,7 +94,7 @@ export default function Home() {
             href="https://www.instagram.com/levsys.io/"
             target="_blank"
             rel="noopener"
-            className="text-[#FDB515] no-underline"
+            className="text-[#000000] dark:text-white no-underline"
           >
             LEVSYS
           </a>
