@@ -91,14 +91,13 @@ export default function Home() {
         <p className="font-extrabold !mt-20 fade-section" data-typewriter>
           right now i&apos;m working on{" "}
           <a
-            href="https://www.instagram.com/buildersatcal/"
+            href="https://www.instagram.com/levsys.io/"
             target="_blank"
             rel="noopener"
             className="text-[#FDB515] no-underline"
           >
-            B@C — Builders @ Cal
+            LEVSYS
           </a>
-          — an organization for ambitious founders
         </p>
 
         <p className="font-extrabold fade-section" data-typewriter>
