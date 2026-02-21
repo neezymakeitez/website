@@ -2,8 +2,6 @@
 
 import { useEffect, useMemo, useState } from "react";
 
-const THREE_DAYS_MS = 3 * 24 * 60 * 60 * 1000;
-
 function formatRemaining(ms: number) {
   const totalSeconds = Math.max(0, Math.floor(ms / 1000));
   const days = Math.floor(totalSeconds / 86400);
@@ -17,7 +15,10 @@ function formatRemaining(ms: number) {
 }
 
 export default function ApparelPage() {
-  const target = useMemo(() => Date.now() + THREE_DAYS_MS, []);
+  const target = useMemo(
+    () => new Date("2026-02-24T00:00:00-05:00").getTime(),
+    []
+  );
   const [remaining, setRemaining] = useState(() => target - Date.now());
 
   useEffect(() => {
@@ -41,11 +42,16 @@ export default function ApparelPage() {
         ))}
       </section>
 
-      <div
-        className="font-mono text-2xl md:text-3xl tracking-wide"
-        aria-live="polite"
-      >
-        {formatRemaining(remaining)}
+      <div className="text-center space-y-2">
+        <div
+          className="font-mono text-2xl md:text-3xl tracking-wide"
+          aria-live="polite"
+        >
+          {formatRemaining(remaining)}
+        </div>
+        <p className="text-sm md:text-base text-neutral-700">
+          Note: This apparel drop is solely to raise funds for future projects.
+        </p>
       </div>
     </main>
   );
