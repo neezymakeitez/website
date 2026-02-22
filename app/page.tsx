@@ -144,8 +144,7 @@ export default function Home() {
             >
               Discourse (&apos;24)
             </a>{" "}
-            — real-time debates with AI moderation and coaching founded with
-            Daniel Joseph
+            — real-time debates with AI moderation and coaching
           </li>
           <li className="fade-section" data-typewriter>
             <a
@@ -177,7 +176,7 @@ export default function Home() {
               SYSTEM (&apos;26)
             </a>{" "}
             — full AI accountability for your health, that goes away & steps in,
-            (SwiftUI, Kotlin, AWS, GCP, Azure) when it needs to
+            when it needs to
           </li>
         </ul>
 
@@ -190,10 +189,10 @@ export default function Home() {
           className="text-[#777777] font-extrabold fade-section"
           data-typewriter
         >
-          i also tinker with ml systems (RAG & llm memory, multi-agent
-          workflows, video & world models). wrote numerous medical machine
-          learning papers, shipped infra, taught machine & deep learning, and
-          still happiest when the loop is:
+          i also tinker with machine learning systems (RAG & memory, multi-agent
+          workflows, video & world models), wrote numerous medical machine
+          learning papers, shipped b2b infra, & taught machine & deep learning,
+          and still happiest when the loop is:
         </p>
         <p className="fade-section" data-typewriter>
           idea → prototype → users → refactor → ship & repeat
